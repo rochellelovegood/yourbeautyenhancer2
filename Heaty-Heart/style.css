@@ -1,0 +1,170 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300;1,400&family=Pacifico&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+
+  nav{
+    z-index: 999;
+   color:white;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    transition: 0.5s ease;
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+  }
+  .navbar-brand{
+    font-family: 'Pacifico', cursive;
+    color: #198754; 
+
+}
+
+/* styles.css */
+/* section{
+  padding: 90px;
+} */
+/* .carousel-item {
+  position: absolute;
+  z-index: 000;
+  top:0;
+  left: 0;
+  object-fit: cover; */
+  /* -webkit-clip-path: circle(4.2% at 0 49%);
+clip-path: circle(0% at 0 50%); */
+/*   
+} */
+/* .video-slides .active{
+  clip-path: circle(150% at 0 50%);
+ transition: 2s ease;
+ transition-property: clip-path ;
+}
+.home::before{
+  z-index: 777;
+  content: " ";
+  position:absolute;
+  background: rgb(27, 94, 32);
+  width: 100%;
+  top:0;
+  left: 0;
+
+}
+.slider-navigation{
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  margin-bottom: 12px;
+}
+.slider-navigation .sliderBtn{
+  width: 12px;
+  height: 12px;
+  background: #198754;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255,255,255,0.5);
+  transition: 0.3 ease;
+
+}
+.slider-navigation .sliderBtn:not(:last-child){
+  margin-right: 20px;
+}
+.slider-navigation .sliderBtn:hover{
+  transform: scale(1.2);
+}
+.slider-navigation .sliderBtn.active{
+  background: #a2aba7;
+} */
+
+
+/* .content{
+  z-index: 888;
+  color: #198754;
+  width: 70%;
+  display: none;
+} */
+/* .home.content .active{
+  display: block;
+} */
+.row {
+    font-family: 'Cormorant', serif;
+}
+div{
+  font-family: 'Cormorant', serif;
+}
+.fixed{
+    font-family: 'Cormorant', serif;
+}
+.photo{
+    background-image: url('img/beauty.png');
+    height: 80vh;
+    width: 85%;
+    object-fit: cover;
+    background-size: cover;
+    margin-right: 70px;
+    margin-left:50px;
+    background-attachment:fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.brands {
+    overflow: hidden;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin-top:300px;
+  
+  }
+  
+  .brands div {
+    height: 300px;
+    min-width: 200px;
+    margin-left: 100px;
+  }
+  .brands img{
+    width: 50%;
+  }
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1500px, 0, 0); /* The image width */
+    }
+  }
+  .brands div {
+    height: 300px;
+    min-width: 200px;
+    margin-left: 100px;
+    animation: slide 15s linear infinite;
+  }
+  /* @media screen and (max-width: 580px) {
+    .brands {
+      display: none;
+    }
+  } */
+  footer{
+    background-image: url('img/pexels-arina-krasnikova-6663469.jpg');
+   
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  footer h1{
+    font-family: 'Pacifico', cursive;
+    color: rgb(10, 1, 14); 
+    text-align: center;
+  }
+  /* for skin care filter */
+ 
+  .show{
+    display: block;
+  }

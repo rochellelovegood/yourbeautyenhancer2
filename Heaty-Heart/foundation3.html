@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>hearty heart</title>
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary m-3 shadow-sm sticky-top ">
+        <div class="container-fluid d-flex justify-content-md">
+          <a class="navbar-brand mr-auto p-2" href="#"><h1 class="fs-2" >Hearty<span class="warning">Heart</span></h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Tutorials</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sales 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="makeup.html">make-up</a></li>
+                  <li><a class="dropdown-item" href="skincare.html">Skin Care</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">All</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Makeup
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="makeup.html">Makeup Essential</a></li>
+                  <li><a class="dropdown-item" href="makeup.html">Discounted Items</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">All</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="skincare.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Skincare
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="skincare.html">Basic Skin Care Steps</a></li>
+                  <li><a class="dropdown-item" href="skincare.html">Face Essential</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="skincare.html">All</a></li>
+                </ul>
+              </li>
+             
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<!-- nav end -->
+
+
+<div class="row row-cols-1 row-cols-md-3 m-3">
+    <div class="col">
+<!-- hero photo start  -->
+<div class="col">
+  <img style="width: 100%; height: 100%;" src="comsmetic/foundation1.jpg" alt="">
+</div>
+<!-- hero photo end -->
+    </div>
+    <div class="col">
+      <h1> BOBBIBROWN  </h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Quam quas atque voluptatibus facilis itaque? Dolorum saepe
+            omnis possimus fugit beatae labore dignissimos neque rem
+             veniam consequatur iure, earum facilis accusamus.</p>
+             <p class="price">44.0$</p>
+            <div class="btn-container">
+              <button type="button" onclick="decrease()" class="btn btn-secondary btn-sm" id="minus-button"><i class="fa-solid fa-minus"></i></button>
+         
+              <span class="count">0</span>
+              <button type="button" onclick="increase()" class="btn btn-secondary btn-sm"  id="plus-button"><i class="fa-solid fa-plus"></i></button>
+             
+       </div>
+
+
+       <div class="buy">
+        <button type="button" class="btn btn-warning mt-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Buy
+         </button>
+        </div>
+         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Do you want to buy it?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="btn-container">
+                  <h1>Thank You for Buying</h1>
+                  <!-- Add a placeholder for displaying the total amount -->
+                  <p id="modal-total-amount">Total Amount: $0.00</p>
+
+                  <p>We appreciate your time here. Feel free to come back anytime.</p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+            </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="m-auto">
+  <div id="#footer" class="bg-image"></div>
+   
+   <div class="row row-cols-1 row-cols-md-4 g-4 m-2 d-flex align-items-center m-3">
+   
+    <div class="col">
+      <h5 class="fw-bold">Customer Service</h5>
+      <ul>
+        <li>
+          <a class="link-dark" href="#">FAQs</a>
+        </li>
+        <li>
+         <a class="link-dark" href="#">Return Policy</a>
+        </li>
+        <li>
+          <a class="link-dark" href="#">Shopping Information</a>
+        </li>
+        <li><a href="#"><i class="fa-brands fa-facebook" style="color: #0d1e3b;"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-threads"></i></a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5  class="fw-bold">
+        Welcome to Hearty Heart
+      </h5>
+
+      <ul>
+        <li><a class="link-dark" href="#">Recycle with us</a></li>
+        <li><a class="link-dark" href="#">Our Ingredient Standard</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5 class="fw-bold"> Rewards </h5>
+       <ul>
+        <li><a class="link-dark" href="#">inni-Friend Rewards</a></li>
+        <li><a class="link-dark" href="#">Limited time</a></li>
+        <li><a class="link-dark" href="#">Sign Up for text & Get 10% OFF*</a></li>
+
+       </ul>    
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          REGISTRATION FORM
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">SIGN UP</h5>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              By submitting this form, you consent to innisfree's 
+              Privacy Policy and Terms of Use. For further information about
+
+               
+            </label>
+          </div>
+          <a href="#" class="btn btn-primary">Sign Up</a>
+        </div>
+      </div>
+    </div>
+   </div>
+ </footer>
+<!-- footer end -->
+
+
+    <script >
+      const countEl = document.querySelector('.count');
+const titleEl = document.querySelector('h1');
+const buyButton = document.querySelector('.buy button');
+
+const cartItemsList = document.querySelector('.cart-items');
+const totalPriceElement = document.querySelector('.total-price');
+const quantityControls = document.querySelectorAll('.btn-container');
+const priceElement = document.querySelector('.price ');
+
+
+// Initialize cart items array and total price
+let cartItems = [];
+let totalQuantity = 0;
+
+
+// Define functions to increase and decrease the quantity
+function increase() {
+  countEl.textContent = ++countEl.textContent || 1;
+}
+
+function decrease() {
+  countEl.textContent = countEl.textContent > 0 ? --countEl.textContent : 0;
+}
+
+// Add event listeners to the quantity controls
+quantityControls.forEach(function(control) {
+  control.addEventListener('click', function() {
+    if (this.contains(event.target)) {
+      if (event.target.matches('button:first-child')) {
+        increase();
+      } else if (event.target.matches('button:last-child')) {
+        decrease();
+      }
+    }
+  });
+});
+
+// Calculate the total amount
+function calculateTotalAmount() {
+
+let totalAmount = 0;
+
+// Loop through the cart items and calculate the total
+for (let i = 0; i < cartItems.length; i++) {
+  totalAmount += cartItems[i].price * cartItems[i].quantity;
+}
+
+return totalAmount.toFixed(2); // Ensure the total is formatted with two decimal places
+}
+
+// Update the total amount element with the calculated total
+function updateTotalAmount() {
+const totalPriceElement = document.getElementById('total-amount');
+totalPriceElement.textContent = `Total Amount: $${calculateTotalAmount()}`;
+}
+
+// Call the updateTotalAmount function whenever the cart is updated
+// Update the total amount element in the modal with the calculated total
+function updateModalTotalAmount() {
+const modalTotalAmountElement = document.getElementById('modal-total-amount');
+modalTotalAmountElement.textContent = `Total Amount: $${calculateTotalAmount()}`;
+}
+buyButton.addEventListener('click', function() {
+// Get the product name, price, and quantity
+const productName = titleEl.textContent;
+const productPrice = parseFloat(document.querySelector('.price').textContent.replace('$', ''));
+const productQuantity = parseInt(countEl.textContent);
+
+// Add the product to the cart items array and update the total price
+cartItems.push({ name: productName, price: productPrice, quantity: productQuantity });
+
+// Clear the cart items list and repopulate it with the updated cart items
+cartItemsList.innerHTML = '';
+for (let i = 0; i < cartItems.length; i++) {
+  const cartItem = document.createElement('li');
+  cartItem.textContent = `${cartItems[i].name} x ${cartItems[i].quantity} - $${(cartItems[i].price * cartItems[i].quantity).toFixed(2)}`;
+  cartItemsList.appendChild(cartItem);
+}
+
+// Update the total price element
+totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+
+
+
+// Update the modal total amount
+updateModalTotalAmount();
+
+// Reset the quantity count
+countEl.textContent = '0';
+totalQuantity = 0;
+});
+// Initialize the total amount when the page loads
+window.addEventListener('load', function () {
+updateTotalAmount();
+});
+
+// Call the updateModalTotalAmount function when the modal is shown
+document.getElementById('staticBackdrop').addEventListener('shown.bs.modal', function () {
+updateModalTotalAmount();
+});
+</script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+  <script>
+      AOS.init();
+    </script>
+    </body>
+    </html>
